@@ -42,4 +42,8 @@ Depot::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  Depot::Application.configure do
+    config.action_mailer.delivery_method = :test
+  end
 end
